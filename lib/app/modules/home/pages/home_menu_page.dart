@@ -29,7 +29,9 @@ class HomeMenuPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              MenuButton(label: 'ALINHADOR PRESSÃO BOLHA', onPressed: () {  },),
+              MenuButton(label: 'ALINHADOR PRESSÃO BOLHA', onPressed: () {  
+                Modular.to.pushNamed('/menu-pressao');
+              },),
               MenuButton(label: 'MOVIMENTAÇÕES DENTÁRIAS', onPressed: () { 
                 Modular.to.navigate("/menu-movimentacao");
                },),
@@ -39,7 +41,9 @@ class HomeMenuPage extends StatelessWidget {
               MenuButton(label: 'ALICATES', onPressed: () { 
                 Modular.to.pushNamed(AppRoutes.menuAlicate);
                },),
-              MenuButton(label: 'PROTOCOLO DE ATENDIMENTO', onPressed: () {  },),
+              MenuButton(label: 'PROTOCOLO DE ATENDIMENTO', onPressed: () {
+                Modular.to.pushNamed('/protocolo');
+                },),
 
               
             ],
