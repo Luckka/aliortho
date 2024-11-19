@@ -17,14 +17,16 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.14.1"
+  flutter_launcher_icons: "^0.13.0"
   flutter_lints: ^3.0.0
 
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/playstore.png"
+  adaptive_icon_background: "#FFFFFF" # Pode ser uma cor hexadecimal ou uma imagem
+  adaptive_icon_foreground: "assets/playstore.png" # Caminho para a camada de primeiro plano
   min_sdk_android: 21
+  image_path:  "assets/playstore.png"
   remove_alpha_ios: true
 
 flutter:
